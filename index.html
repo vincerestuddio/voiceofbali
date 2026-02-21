@@ -161,31 +161,66 @@
      <div class="flex justify-between items-center h-16 sm:h-20">
       <div class="flex items-center gap-2"><img src="Aset/LOGO.png" alt="Voice of Bali Logo" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" loading="lazy" onerror="console.error('Logo failed to load:', this.src); this.style.background='#e8f4ff';"> <span class="font-semibold text-gray-800 text-sm sm:text-base">Voice of Bali</span>
       </div>
-      <div class="hidden md:flex items-center gap-8"><a href="#home" class="nav-link text-gray-600 hover:text-gray-900 text-sm font-medium">Home</a> <a href="#about" class="nav-link text-gray-600 hover:text-gray-900 text-sm font-medium">About</a> <a href="#gallery" class="nav-link text-gray-600 hover:text-gray-900 text-sm font-medium">Gallery</a> <a href="#repertoire" class="nav-link text-gray-600 hover:text-gray-900 text-sm font-medium">Repertoire</a> <a href="#contact" class="nav-link text-gray-600 hover:text-gray-900 text-sm font-medium">Contact</a>
-      </div><button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600">
-       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-       </svg></button>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#home" class="nav-link text-gray-600 hover:text-gray-900 text-sm font-medium">Home</a>
+        <a href="#about" class="nav-link text-gray-600 hover:text-gray-900 text-sm font-medium">About</a> 
+        <a href="#gallery" class="nav-link text-gray-600 hover:text-gray-900 text-sm font-medium">Gallery</a> 
+        <a href="#repertoire" class="nav-link text-gray-600 hover:text-gray-900 text-sm font-medium">Repertoire</a> 
+        <a href="#contact" class="nav-link text-gray-600 hover:text-gray-900 text-sm font-medium">Contact</a>
+
+        <div class="flex items-center gap-2 ml-6 text-sm font-medium">
+          <button onclick="setLang('id')" id="btn-id"
+            class="px-3 py-1 rounded-md bg-sky-500 text-white transition">
+              IND
+          </button>
+
+          <button onclick="setLang('en')" id="btn-en"
+            class="px-3 py-1 rounded-md text-gray-600 hover:bg-gray-100 transition">
+               ENG
+          </button>
+      </div>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600">
+       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+       </svg>
+      </button>
      </div>
     </div><!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-     <div class="px-4 py-4 space-y-3"><a href="#home" class="block text-gray-600 hover:text-gray-900 py-2">Home</a> <a href="#about" class="block text-gray-600 hover:text-gray-900 py-2">About</a> <a href="#gallery" class="block text-gray-600 hover:text-gray-900 py-2">Gallery</a> <a href="#repertoire" class="block text-gray-600 hover:text-gray-900 py-2">Repertoire</a> <a href="#contact" class="block text-gray-600 hover:text-gray-900 py-2">Contact</a>
+     <div class="px-4 py-4 space-y-3">
+      <a href="#home" class="block text-gray-600 hover:text-gray-900 py-2">Home</a> 
+      <a href="#about" class="block text-gray-600 hover:text-gray-900 py-2">About</a> 
+      <a href="#gallery" class="block text-gray-600 hover:text-gray-900 py-2">Gallery</a> 
+      <a href="#repertoire" class="block text-gray-600 hover:text-gray-900 py-2">Repertoire</a> 
+      <a href="#contact" class="block text-gray-600 hover:text-gray-900 py-2">Contact</a>
      </div>
     </div>
    </nav><!-- SECTION 1: HERO -->
    <section id="home" class="min-h-screen flex items-center justify-center pt-16 sm:pt-20 bg-gradient-to-br from-sky-100 via-white to-blue-200"">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16 sm:py-20"><!-- Logo -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16 sm:py-20">
+      <!-- Logo -->
      <div class="mb-8 sm:mb-12 fade-in"><img src="/Aset/LOGO.png" alt="Voice of Bali Logo" class="w-24 h-24 sm:w-32 sm:h-32 mx-auto object-contain" loading="lazy" onerror="console.error('Logo failed to load:', this.src); this.style.background='#e8f4ff';">
      </div><!-- Heading -->
      <h1 id="hero-title" class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6 sm:mb-8 fade-in" style="animation-delay: 0.2s">From Bali with Love</h1>
      <!-- Description -->
-     <p id="hero-description" 
-   class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto mb-10 sm:mb-12 leading-relaxed fade-in text-justify" 
-   style="animation-delay: 0.4s">
-   Voice of Bali adalah paduan suara yang menghadirkan harmoni vokal dengan warna khas Nusantara dalam sajian karya yang beragam. Setiap penampilan ditata untuk menampilkan kualitas artistik yang elegan, berkesan, dan berkelas bagi berbagai panggung dan acara istimewa.
-</p>
-     <div class="fade-in" style="animation-delay: 0.6s"><a href="https://wa.me/6282146556265" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-3 bg-sky-400 text-white px-8 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg font-medium shadow-lg">
-       <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-       </svg> Inquire for Performances</a>
+     <p id="hero-description" data-i18n="hero_description" 
+     class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto mb-10 sm:mb-12 leading-relaxed fade-in text-justify" 
+     style="animation-delay: 0.4s">
+        Voice of Bali adalah paduan suara yang menghadirkan harmoni vokal dengan warna khas Nusantara dalam sajian karya yang beragam. Setiap penampilan ditata untuk menampilkan kualitas artistik yang elegan, berkesan, dan berkelas bagi berbagai panggung dan acara istimewa.
+    </p>
+
+     <div class="fade-in" style="animation-delay: 0.6s">
+      <a href="https://wa.me/6282146556265" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-3 bg-sky-400 text-white px-8 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg font-medium shadow-lg" >
+       <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewbox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+       </svg> 
+       <p data-i18n="btn_wa">
+        Inquire for Performances
+        </p>
+      </a>
+
      </div><!-- Scroll Indicator -->
      <div class="mt-16 sm:mt-20 animate-bounce">
       <svg class="w-6 h-6 mx-auto text-gray-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
@@ -197,25 +232,25 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center"><!-- Left Column: Text -->
       <div class="order-2 lg:order-1">
-       <h2 id="about-title" class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">About Voice of Bali</h2>
+       <h2 id="about-title" data-i18n="about_title" class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">Tentang Voice of Bali</h2>
        <div class="section-divider mb-8" style="margin: 0 0 2rem 0;"></div>
-       <p id="about-description" class="text-gray-600 text-base sm:text-lg leading-relaxed mb-8">
+       <p id="about-description" data-i18n="about_desc" class="text-gray-600 text-base sm:text-lg leading-relaxed mb-8">
         Didirikan pada 6 Oktober 2012 sebagai paduan suara yang berkomitmen menghadirkan harmoni vokal dengan identitas budaya yang kuat sekaligus perspektif musikal yang terbuka. Sejak awal berdiri, Voice of Bali berupaya menampilkan daya tarik Bali melalui pendekatan apresiatif yang memadukan seni gerak, seni vokal, dan ekspresi musikal dalam satu kesatuan artistik. </p>
        <div id="about-more"
           class="max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
-            <p class="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
+            <p id="about-more1" data-i18n="about_more1" class="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
               Tidak hanya berfokus pada pelestarian budaya Bali, Voice of Bali juga membawakan beragam karya dari berbagai tradisi dan gaya musik, mencerminkan karakter yang adaptif dan dinamis. Melalui konser, kompetisi, serta berbagai ajang nasional dan internasional, Voice of Bali terus mengangkat citra Bali dalam ranah seni pertunjukan sekaligus memperluas jangkauan musikalnya.
             </p>
-            <p class="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
+            <p data-i18n="about_more2" class="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
               Dengan latar anggota yang beragam dan berasal dari berbagai daerah di Indonesia, Voice of Bali dibangun di atas semangat kebersamaan dan pertukaran ide. Nilai ini menjadi bagian penting dalam proses pembelajaran, pengembangan musikal, dan pembentukan karakter generasi muda melalui paduan suara. 
             </p>
-            <p class="text-gray-600 text-base sm:text-lg leading-relaxed mb-10">
+            <p data-i18n="about_more3" class="text-gray-600 text-base sm:text-lg leading-relaxed mb-10">
               Lebih dari sekadar kelompok vokal, Voice of Bali tumbuh sebagai komunitas yang menjunjung nilai kebersamaan, disiplin, dan profesionalisme. Dalam setiap penampilan, komitmen terhadap kualitas artistik dan integritas musikal menjadi fondasi utama yang terus dijaga dan dikembangkan.
             </p>
         </div>
         <button onclick="toggleAbout()" 
           class="btn-secondary inline-flex items-center gap-2 text-sky-500 border-2 border-sky-400 px-6 py-3 rounded-full font-medium hover:bg-sky-50">
-          <span id="about-btn-text">Discover Our Story</span>
+          <span id="about-btn-text" data-i18n="about_button">Discover Our Story</span>
           <svg class="w-4 h-4 transition-transform duration-500" id="about-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
           </svg>
@@ -233,10 +268,10 @@
    <section id="gallery" class="py-20 sm:py-24 lg:py-28" style="background-color: #F4FAFF;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><!-- Section Header -->
      <div class="text-center mb-12 sm:mb-16">
-      <h2 id="gallery-title" class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">Gallery</h2>
+      <h2 id="gallery-title" data-i18n="gallery_title" data-i18n="gallery-title" class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">Gallery</h2>
       <div class="section-divider mb-6"></div>
-      <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">Moments in Harmony </p>
-      <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">Dokumentasi visual perjalanan artistik Voice of Bali dalam setiap panggung dan penampilan</p>
+      <p id="gellery-description" data-i18n="gallery_description1" class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">Moments in Harmony </p>
+      <p id="gallery-description" data-i18n="gallery_description2" class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">Dokumentasi visual perjalanan artistik Voice of Bali dalam setiap panggung dan penampilan</p>
      </div><!-- Photo Gallery Grid -->
      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-10 sm:mb-12"><!-- Gallery Item 1 -->
       <div class="gallery-item rounded-2xl overflow-hidden shadow-lg cursor-pointer"><img src="Aset/Kempinski.jpg" alt="Performance moment 1" class="w-full h-full object-cover aspect-square" loading="lazy" onerror="console.error('Image failed to load:', this.src); this.style.background='#e8f4ff';">
@@ -252,9 +287,9 @@
    <section id="repertoire" class="py-20 sm:py-24 lg:py-28 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><!-- Section Header -->
      <div class="text-center mb-12 sm:mb-16">
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">Performance Repertoire</h2>
+      <h2 data-i18n="repertoire_title" class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">Performance Repertoire</h2>
       <div class="section-divider mb-6"></div>
-      <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">Koleksi penampilan yang merekam ragam karya dan karakter musikal Voice of Bali</p>
+      <p data-i18n="repertoire_desc" class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">Koleksi penampilan yang merekam ragam karya dan karakter musikal Voice of Bali</p>
      </div><!-- Video Grid -->
      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8"><!-- Video 1 -->
       <div class="video-container">
@@ -298,8 +333,8 @@
    </section><!-- SECTION 5: CTA BOOKING -->
    <section id="contact" class="py-24 sm:py-28 lg:py-32 bg-sky-400">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-     <h2 id="cta-title" class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-6 sm:mb-8">Ingin Menjalin Kerja Sama dengan Voice of Bali?</h2>
-     <p id="cta-description" class="text-white/90 text-lg sm:text-xl max-w-2xl mx-auto mb-10 sm:mb-12 leading-relaxed">Hubungi kami untuk informasi penampilan dan kolaborasi</p>
+     <h3 id="cta-title" data-i18n="cta_title" class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-6 sm:mb-8">Ingin Menjalin Kerja Sama dengan Voice of Bali?</h3>
+     <p id="cta-description" data-i18n="cta_description" class="text-white/90 text-lg sm:text-xl max-w-2xl mx-auto mb-10 sm:mb-12 leading-relaxed">Hubungi kami untuk informasi penampilan dan kolaborasi</p>
      <a href="https://wa.me/6282146556265" target="_blank" rel="noopener noreferrer" class="animate-bounce btn-white inline-flex items-center gap-3 bg-white text-sky-500 px-8 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg font-semibold shadow-lg">
       <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
       </svg> Connect with Us </a>
@@ -552,6 +587,71 @@ function toggleAbout() {
     arrow.classList.remove("rotate-90");
   }
 }
+</script>
+<script>
+const translations = {
+  id: {
+    hero_description:"Voice of Bali adalah paduan suara yang menghadirkan harmoni vokal dengan warna khas Nusantara dalam sajian karya yang beragam. Setiap penampilan ditata untuk menampilkan kualitas artistik yang elegan, berkesan, dan berkelas bagi berbagai panggung dan acara istimewa.",
+    btn_wa:"Hubungi Kami",
+    about_title: "Tentang Voice of Bali",
+    about_desc: "Didirikan pada 6 Oktober 2012 sebagai paduan suara yang berkomitmen menghadirkan harmoni vokal dengan identitas budaya yang kuat sekaligus perspektif musikal yang terbuka.",
+    about_button: "Cerita Lengkap",
+    about_more1: "Tidak hanya berfokus pada pelestarian budaya Bali, Voice of Bali juga membawakan beragam karya dari berbagai tradisi dan gaya musik, mencerminkan karakter yang adaptif dan dinamis. Melalui konser, kompetisi, serta berbagai ajang nasional dan internasional, Voice of Bali terus mengangkat citra Bali dalam ranah seni pertunjukan sekaligus memperluas jangkauan musikalnya.",
+    about_more2: "Dengan latar anggota yang beragam dan berasal dari berbagai daerah di Indonesia, Voice of Bali dibangun di atas semangat kebersamaan dan pertukaran ide. Nilai ini menjadi bagian penting dalam proses pembelajaran, pengembangan musikal, dan pembentukan karakter generasi muda melalui paduan suara.",
+    about_more3: "Lebih dari sekadar kelompok vokal, Voice of Bali tumbuh sebagai komunitas yang menjunjung nilai kebersamaan, disiplin, dan profesionalisme. Dalam setiap penampilan, komitmen terhadap kualitas artistik dan integritas musikal menjadi fondasi utama yang terus dijaga dan dikembangkan.",
+    gallery_title:"Gallery",
+    gallery_description1:"Moments in Harmony",
+    gallery_description2:"Dokumentasi visual perjalanan artistik Voice of Bali dalam setiap panggung dan penampilan",
+    repertoire_title:"Performance Repertoire",
+    repertoire_desc:"Koleksi penampilan yang merekam ragam karya dan karakter musikal Voice of Bali",
+    cta_title:"Ingin Menjalin Kerja Sama dengan Voice of Bali?",
+    cta_description:"Silakan hubungi kami untuk informasi penampilan dan kolaborasi",
+
+  },
+  en: {
+    hero_description:"Voice of Bali a choir that presents vocal harmony with a distinctive Nusantara character through a diverse selection of works. Each performance is thoughtfully arranged to deliver artistic excellence that is elegant, memorable, and refined for various stages and distinguished occasions.",
+    btn_wa:"Inquire for Performances",
+    about_title: "About Voice of Bali",
+    about_desc: "Voice of Bali was established on October 6, 2012, as a choir committed to presenting vocal harmony rooted in strong cultural identity while embracing an open and expansive musical perspective. Since its inception, Voice of Bali has sought to showcase the charm of Bali through an appreciative approach that integrates movement, vocal artistry, and musical expression into a unified artistic presentation. ",
+    about_button: "Discover Our Story",
+    about_more1: "Beyond preserving Balinese cultural heritage, Voice of Bali performs a diverse range of works drawn from various traditions and musical styles, reflecting its adaptive and dynamic character. Through concerts, competitions, and numerous national and international engagements, Voice of Bali continues to elevate Bali's image within the performing arts while expanding its musical reach.",
+    about_more2: "With members coming from diverse backgrounds across Indonesia and residing in Bali, Voice of Bali is built upon a spirit of unity and exchange of ideas. These values play an essential role in the learning process, musical development, and character building of young generations through choral music.",
+    about_more3: "More than a vocal ensemble, Voice of Bali has grown into a community that upholds togetherness, discipline, and professionalism. In every performance, a commitment to artistic excellence and musical integrity remains the foundation that continues to be nurtured and developed",
+    gallery_title:"Gallery",
+    gallery_description1:"Moments in Harmony",
+    gallery_description2:"A visual record of Voice of Bali’s artistic journey across stages and performances",
+    repertoire_title:"Performance Repertoire",
+    repertoire_desc:"A collection of performances capturing the diversity of works and the distinctive musical character of Voice of Bali",
+    cta_title:"Interested in Connecting with Voice of Bali? ",
+    cta_description:"Let’s connect to explore opportunities in performance, collaboration, and artistic partnership.",
+  }
+};
+
+function setLang(lang) {
+  localStorage.setItem("lang", lang);
+
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[lang][key]) {
+      el.innerText = translations[lang][key];
+    }
+  });
+
+  // tombol aktif
+  document.getElementById("btn-id").classList.remove("bg-sky-500","text-white");
+  document.getElementById("btn-en").classList.remove("bg-sky-500","text-white");
+
+  document.getElementById("btn-id").classList.add("text-gray-600");
+  document.getElementById("btn-en").classList.add("text-gray-600");
+
+  document.getElementById("btn-"+lang).classList.add("bg-sky-500","text-white");
+}
+
+// load bahasa saat buka web
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("lang") || "en";
+  setLang(savedLang);
+});
 </script>
  </body>
 </html>
